@@ -1,18 +1,34 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyAirport.EF
 {
     public class Bagage
     {
-        private int Id { get; set; }
-        private DateTime Date_Creation { get; set; }
-        private string Code_Iata { get; set; }
-        private string Classe { get; set; }
-        private string Prioritaire { get; set; }
-        private string Sta { get; set; }
-        private string SSUR { get; set; }
-        private string Destination { get; set; }
-        private string Escale { get; set; }
+        [Key]
+        public int BagageId { get; set; }
+
+        public Vol Vol { get; set; }
+
+        [ForeignKey("VolId")]
+        public int VolId { get; set; }
+
+        public DateTime DateCreation { get; set; }
+
+        public string CodeIata { get; set; }
+
+        public string Classe { get; set; }
+
+        public string Prioritaire { get; set; }
+
+        public string Sta { get; set; }
+
+        public string SSUR { get; set; }
+
+        public string Destination { get; set; }
+
+        public string Escale { get; set; }
 
     }
 }

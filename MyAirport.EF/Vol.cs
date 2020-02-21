@@ -1,17 +1,28 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace MyAirport.EF
 {
     public class Vol
     {
-            private int Vol_Id { get; set; }
-            private int Cie { get; set; }
-            private string Lig { get; set; }
-            private int Jex { get; set; }
-            private DateTime Dhc { get; set; }
-            private string Pkg { get; set; }
-            private string Imm { get; set; }
-            private int Pax { get; set; }
-            private string Des { get; set; }
+            [Key]
+            public int VolId { get; set; }
+
+            public int Cie { get; set; }
+
+            public string Lig { get; set; }
+
+            public int Jex { get; set; }
+
+            public DateTime Dhc { get; set; }
+
+            public string Pkg { get; set; }
+
+            public string Imm { get; set; }
+
+            public int Pax { get; set; }
+
+            public string Des { get; set; }
         
     }
 }
