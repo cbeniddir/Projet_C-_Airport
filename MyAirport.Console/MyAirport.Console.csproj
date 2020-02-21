@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MyAirport.EF\obj\MyAirport.EF.csproj.nuget.dgspec.json" />
+    <None Remove="MyAirport.EF\obj\Debug\netcoreapp3.0\MyAirport.EF.assets.cache" />
+  </ItemGroup>
+</Project>

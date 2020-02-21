@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/celinebeniddir/.dotnet/store/|arch|/|tfm|",
+      "/Users/celinebeniddir/.nuget/packages"
+    ]
+  }
+}

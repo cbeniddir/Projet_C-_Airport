@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAirport.Console", "MyAirport.Console.csproj", "{AEF01705-7AB3-491D-8528-4236F4C0D4D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAirport.EF", "..\MyAirport.EF\MyAirport.EF.csproj", "{2170EA4D-2E14-4A8D-B908-4E6BA9248326}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEF01705-7AB3-491D-8528-4236F4C0D4D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF01705-7AB3-491D-8528-4236F4C0D4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF01705-7AB3-491D-8528-4236F4C0D4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF01705-7AB3-491D-8528-4236F4C0D4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2170EA4D-2E14-4A8D-B908-4E6BA9248326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2170EA4D-2E14-4A8D-B908-4E6BA9248326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2170EA4D-2E14-4A8D-B908-4E6BA9248326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2170EA4D-2E14-4A8D-B908-4E6BA9248326}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

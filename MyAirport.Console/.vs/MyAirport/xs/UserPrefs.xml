@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{AEF01705-7AB3-491D-8528-4236F4C0D4D2}|Default">
+  <MonoDevelop.Ide.ItemProperties.MyAirport.Console FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../MyAirport.EF/Bagage.cs">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="../MyAirport.EF/Vol.cs" Line="1" Column="1" />
+      <File FileName="../MyAirport.EF/MyAirportContext.cs" />
+      <File FileName="../MyAirport.EF/Bagage.cs" Line="7" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyAirport" expanded="True">
+            <Node name="MyAirport.Console" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+            <Node name="MyAirport.EF" expanded="True">
+              <Node name="Bagage.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>MyAirport.EF/MyAirport.EF.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.MyAirport.EF FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

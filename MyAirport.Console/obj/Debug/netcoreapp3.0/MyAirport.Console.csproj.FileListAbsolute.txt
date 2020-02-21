@@ -1,0 +1,10 @@
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/bin/Debug/netcoreapp3.0/MyAirport.Console
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/bin/Debug/netcoreapp3.0/MyAirport.Console.deps.json
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/bin/Debug/netcoreapp3.0/MyAirport.Console.runtimeconfig.json
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/bin/Debug/netcoreapp3.0/MyAirport.Console.runtimeconfig.dev.json
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/bin/Debug/netcoreapp3.0/MyAirport.Console.dll
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/bin/Debug/netcoreapp3.0/MyAirport.Console.pdb
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/obj/Debug/netcoreapp3.0/MyAirport.Console.AssemblyInfoInputs.cache
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/obj/Debug/netcoreapp3.0/MyAirport.Console.AssemblyInfo.cs
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/obj/Debug/netcoreapp3.0/MyAirport.Console.dll
+/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/obj/Debug/netcoreapp3.0/MyAirport.Console.pdb
