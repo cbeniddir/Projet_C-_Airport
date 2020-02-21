@@ -3,7 +3,7 @@ namespace MyAirport.EF
 {
     public class Vol
     {
-            private int Id { get; set; }
+            private int Vol_Id { get; set; }
             private int Cie { get; set; }
             private string Lig { get; set; }
             private int Jex { get; set; }
