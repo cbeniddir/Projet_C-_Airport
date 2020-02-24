@@ -10,9 +10,10 @@ namespace MyAirport.EF
        public DbSet<Vol> Vol { get; set; }
 
        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-       { 
-               optionsBuilder.UseSqlite("Data Source = MyAirport.db");
-       }
+       {
+            optionsBuilder.UseSqlServer(
+             @"Server=(localdb)\mssqllocaldb;Database=Blogging;Integrated Security=True");
+        }
 
     }
 }

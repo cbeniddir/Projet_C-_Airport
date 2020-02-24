@@ -14,7 +14,7 @@
         "outputPath": "/Users/celinebeniddir/Projet_C-_Airport/MyAirport.EF/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/celinebeniddir/.nuget/NuGet/NuGet.Config"
+          "/Users/celinebeniddir/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -43,6 +43,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.2, )"
             },

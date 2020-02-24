@@ -7,4 +7,3 @@
 /Users/celinebeniddir/Projet_C-_Airport/MyAirport.EF/obj/Debug/netcoreapp3.0/MyAirport.EF.AssemblyInfo.cs
 /Users/celinebeniddir/Projet_C-_Airport/MyAirport.EF/obj/Debug/netcoreapp3.0/MyAirport.EF.dll
 /Users/celinebeniddir/Projet_C-_Airport/MyAirport.EF/obj/Debug/netcoreapp3.0/MyAirport.EF.pdb
-/Users/celinebeniddir/Projet_C-_Airport/MyAirport.EF/obj/Debug/netcoreapp3.0/MyAirport.EF.csprojAssemblyReference.cache
