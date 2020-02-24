@@ -12,7 +12,7 @@ namespace MyAirport.EF
         public Vol Vol { get; set; }
 
         [ForeignKey("VolId")]
-        public int VolId { get; set; }
+        public int? VolId { get; set; }
 
         public DateTime DateCreation { get; set; }
 
