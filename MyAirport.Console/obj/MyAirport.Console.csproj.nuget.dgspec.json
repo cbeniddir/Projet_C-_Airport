@@ -1,25 +1,117 @@
 {
   "format": 1,
   "restore": {
-    "/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/MyAirport.Console.csproj": {}
+    "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.Console\\MyAirport.Console.csproj": {}
   },
   "projects": {
-    "/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/MyAirport.Console.csproj": {
+    "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.Console\\MyAirport.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/MyAirport.Console.csproj",
+        "projectUniqueName": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.Console\\MyAirport.Console.csproj",
         "projectName": "MyAirport.Console",
-        "projectPath": "/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/MyAirport.Console.csproj",
-        "packagesPath": "/Users/celinebeniddir/.nuget/packages/",
-        "outputPath": "/Users/celinebeniddir/Projet_C-_Airport/MyAirport.Console/obj/",
+        "projectPath": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.Console\\MyAirport.Console.csproj",
+        "packagesPath": "C:\\Users\\sakaddour\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.Console\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/celinebeniddir/.config/NuGet/NuGet.Config"
+          "C:\\Users\\sakaddour\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj": {
+                "projectPath": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.3, 3.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj",
+        "projectName": "MyAirport.EF",
+        "projectPath": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj",
+        "packagesPath": "C:\\Users\\sakaddour\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sakaddour\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +132,13 @@
               "target": "Package",
               "version": "[3.1.2, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.2, )"
             }
@@ -55,12 +153,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

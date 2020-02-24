@@ -8,11 +8,9 @@ namespace MyAirport.EF
             [Key]
             public int VolId { get; set; }
 
-            public int Cie { get; set; }
+            public string Cie { get; set; }
 
             public string Lig { get; set; }
-
-            public int Jex { get; set; }
 
             public DateTime Dhc { get; set; }
 

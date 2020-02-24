@@ -12,7 +12,7 @@ namespace MyAirport.EF
        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
        {
             optionsBuilder.UseSqlServer(
-             @"Server=(localdb)\mssqllocaldb;Database=MyAirport;Integrated Security=True");
+             @"Server=localhost\SQLEXPRESS;Database=MyAirport;Integrated Security=True");
         }
 
     }
