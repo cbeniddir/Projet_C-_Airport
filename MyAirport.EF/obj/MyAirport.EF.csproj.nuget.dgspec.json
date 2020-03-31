@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj": {}
+    "C:\\Projects\\Projet_C-_Airport\\MyAirport.EF\\MyAirport.EF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj": {
+    "C:\\Projects\\Projet_C-_Airport\\MyAirport.EF\\MyAirport.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj",
+        "projectUniqueName": "C:\\Projects\\Projet_C-_Airport\\MyAirport.EF\\MyAirport.EF.csproj",
         "projectName": "MyAirport.EF",
-        "projectPath": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\MyAirport.EF.csproj",
-        "packagesPath": "C:\\Users\\sakaddour\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sakaddour\\Documents\\COURS ING4\\DEV-C#\\MyAirport.EF\\obj\\",
+        "projectPath": "C:\\Projects\\Projet_C-_Airport\\MyAirport.EF\\MyAirport.EF.csproj",
+        "packagesPath": "C:\\Users\\benid\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Projet_C-_Airport\\MyAirport.EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\sakaddour\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\benid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -55,6 +55,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

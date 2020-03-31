@@ -1,14 +1,27 @@
-﻿using MyAirport.EF;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using MyAirport.EF;
 using System;
+using System.Configuration;
 using System.Linq;
+using MyAirport.ConsoleApp;
 
 namespace MyAirport.ConsoleApp
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            var logger = MyAirportContext.loggerFactory.CreateLogger<Program>();
+            
+            //TODO : Faire marcher la création de l'objet MyAirportContext() avec DbContextOptions
+            
+            //DbContextOptionsBuilder optionsBuilder = new DbContextOptionsBuilder<MyAirportContext>();
+           // var connectionString = ConfigurationManager.ConnectionStrings["MyAirportDatabase"].ConnectionString;
+            //optionsBuilder.UseSqlServer(connectionString);
+
             System.Console.WriteLine("MyAirport project bonjour!!");
+            //using (var db = new MyAirportContext(optionsBuilder.Options)
             using (var db = new MyAirportContext())
             {
                 // Create
@@ -50,8 +63,11 @@ namespace MyAirport.ConsoleApp
 
                 db.SaveChanges();
                 Console.ReadLine();
+                
+                logger.LogInformation("Example log message create");
 
                 // Read
+                
                 Console.WriteLine("Voici la liste des vols disponibles");
                 var vol = db.Vol
                     .OrderBy(v => v.Cie);
@@ -66,6 +82,7 @@ namespace MyAirport.ConsoleApp
                 b1.VolId = v1.VolId;
                 db.SaveChanges();
                 Console.ReadLine();
+               
 
                 //Delete vol et bagages du vol
                 Console.WriteLine($"Suppression du vol {v1.VolId} => {v1.Cie}{v1.Lig}");
@@ -73,6 +90,9 @@ namespace MyAirport.ConsoleApp
                 db.SaveChanges();
                 Console.ReadLine();
             }
+
+         
+
         }
     }
 }

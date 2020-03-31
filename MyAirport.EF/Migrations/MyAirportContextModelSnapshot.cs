@@ -96,7 +96,7 @@ namespace MyAirport.EF.Migrations
             modelBuilder.Entity("MyAirport.EF.Bagage", b =>
                 {
                     b.HasOne("MyAirport.EF.Vol", "Vol")
-                        .WithMany()
+                        .WithMany("Bagages")
                         .HasForeignKey("VolId");
                 });
 #pragma warning restore 612, 618

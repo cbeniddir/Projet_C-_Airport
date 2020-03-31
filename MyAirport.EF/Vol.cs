@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace MyAirport.EF
@@ -21,6 +22,7 @@ namespace MyAirport.EF
             public int Pax { get; set; }
 
             public string Des { get; set; }
-        
+            public List<Bagage> Bagages { get; set; }
+
     }
 }
