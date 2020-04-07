@@ -12,7 +12,7 @@ namespace MyAirport.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var logger = MyAirportContext.loggerFactory.CreateLogger<Program>();
+            //var logger = MyAirportContext.loggerFactory.CreateLogger<Program>();
             
             //TODO : Faire marcher la création de l'objet MyAirportContext() avec DbContextOptions
             
@@ -29,12 +29,12 @@ namespace MyAirport.ConsoleApp
                 Vol v1 = new Vol
                 {
                     Cie = "LH",
-                    Des = "BKK",
+                    Destination = "BKK",
                     Dhc = Convert.ToDateTime("14/01/2020 16:45"),
-                    Imm = "RZ62",
+                    Immatriculation = "RZ62",
                     Lig = "1232",
-                    Pkg = "R52",
-                    Pax = 238
+                    Parking = "R52",
+                    NbPassagers = 238
                 };
                 db.Add(v1);
 
@@ -42,12 +42,12 @@ namespace MyAirport.ConsoleApp
                 Vol v2 = new Vol
                 {
                     Cie = "SK",
-                    Des = "CDG",
+                    Destination = "CDG",
                     Dhc = Convert.ToDateTime("14/01/2020 18:20"),
-                    Imm = "TG43",
+                    Immatriculation = "TG43",
                     Lig = "333",
-                    Pkg = "R51",
-                    Pax = 423
+                    Parking = "R51",
+                    NbPassagers = 423
                 };
                 db.Add(v2);
 
@@ -64,16 +64,16 @@ namespace MyAirport.ConsoleApp
                 db.SaveChanges();
                 Console.ReadLine();
                 
-                logger.LogInformation("Example log message create");
+                //logger.LogInformation("Example log message create");
 
                 // Read
                 
                 Console.WriteLine("Voici la liste des vols disponibles");
-                var vol = db.Vol
+                var vol = db.Vols
                     .OrderBy(v => v.Cie);
                 foreach (var v in vol)
                 {
-                    Console.WriteLine($"Le vol {v.Cie}{v.Lig} N° {v.VolId} a destination de {v.Des} part à {v.Dhc} heure");
+                    Console.WriteLine($"Le vol {v.Cie}{v.Lig} N° {v.VolId} a destination de {v.Destination} part à {v.Dhc} heure");
                 }
                 Console.ReadLine();
 

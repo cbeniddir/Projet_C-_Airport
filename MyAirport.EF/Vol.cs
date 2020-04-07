@@ -15,14 +15,28 @@ namespace MyAirport.EF
 
             public DateTime Dhc { get; set; }
 
-            public string Pkg { get; set; }
+            public string? Parking { get; set; }
 
-            public string Imm { get; set; }
+            public string? Immatriculation { get; set; }
 
-            public int Pax { get; set; }
+            public short? NbPassagers { get; set; }
 
-            public string Des { get; set; }
-            public List<Bagage> Bagages { get; set; }
+            public string? Destination { get; set; }
+            public IEnumerable<Bagage>? Bagages { get; set; }
+
+            public Vol()
+            {
+                
+            }
+
+            public Vol(string compagnie, string ligne, DateTime dhc)
+            {
+                Cie = compagnie;
+                Lig = ligne;
+                Dhc = dhc;
+               // Bagages = null;//new List<Bagage>();
+
+            }
 
     }
 }

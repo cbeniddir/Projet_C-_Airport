@@ -17,18 +17,29 @@ namespace MyAirport.EF
         public DateTime DateCreation { get; set; }
 
         public string CodeIata { get; set; }
-
+        [Column(TypeName = "char(12)")]
         public string Classe { get; set; }
-
-        public string Prioritaire { get; set; }
+        [Column(TypeName = "char(12)")]
+        public Byte Prioritaire { get; set; }
 
         public string Sta { get; set; }
-
+        [Column(TypeName = "char(12)")]
         public string SSUR { get; set; }
-
+        [Column(TypeName = "char(12)")]
         public string Destination { get; set; }
-
+        [Column(TypeName = "char(12)")]
         public string Escale { get; set; }
+
+        public Bagage(string codeIata, DateTime dateCreation)
+        {
+            CodeIata = codeIata;
+            DateCreation = dateCreation;
+        }
+
+        public Bagage()
+        {
+
+        }
 
     }
 }

@@ -26,4 +26,3 @@ C:\Projects\Projet_C-_Airport\MyAirport.EF\obj\Debug\netcoreapp3.0\MyAirport.EF.
 C:\Projects\Projet_C-_Airport\MyAirport.EF\obj\Debug\netcoreapp3.0\MyAirport.EF.AssemblyInfo.cs
 C:\Projects\Projet_C-_Airport\MyAirport.EF\obj\Debug\netcoreapp3.0\MyAirport.EF.dll
 C:\Projects\Projet_C-_Airport\MyAirport.EF\obj\Debug\netcoreapp3.0\MyAirport.EF.pdb
-C:\Projects\Projet_C-_Airport\MyAirport.EF\obj\Debug\netcoreapp3.0\MyAirport.EF.csprojAssemblyReference.cache

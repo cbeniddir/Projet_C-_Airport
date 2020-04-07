@@ -27,7 +27,7 @@ namespace MyAirport.EF.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Classe")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("char(12)");
 
                     b.Property<string>("CodeIata")
                         .HasColumnType("nvarchar(max)");
@@ -36,16 +36,17 @@ namespace MyAirport.EF.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Destination")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("char(12)");
 
                     b.Property<string>("Escale")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("char(12)");
 
                     b.Property<string>("Prioritaire")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("char(12)");
 
                     b.Property<string>("SSUR")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("char(12)");
 
                     b.Property<string>("Sta")
                         .HasColumnType("nvarchar(max)");
@@ -57,7 +58,7 @@ namespace MyAirport.EF.Migrations
 
                     b.HasIndex("VolId");
 
-                    b.ToTable("Bagage");
+                    b.ToTable("Bagages");
                 });
 
             modelBuilder.Entity("MyAirport.EF.Vol", b =>
@@ -70,27 +71,27 @@ namespace MyAirport.EF.Migrations
                     b.Property<string>("Cie")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Des")
+                    b.Property<string>("Destination")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Dhc")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Imm")
+                    b.Property<string>("Immatriculation")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Lig")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Pax")
-                        .HasColumnType("int");
+                    b.Property<short?>("NbPassagers")
+                        .HasColumnType("smallint");
 
-                    b.Property<string>("Pkg")
+                    b.Property<string>("Parking")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("VolId");
 
-                    b.ToTable("Vol");
+                    b.ToTable("Vols");
                 });
 
             modelBuilder.Entity("MyAirport.EF.Bagage", b =>
