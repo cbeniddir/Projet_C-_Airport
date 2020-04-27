@@ -12,6 +12,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using MyAirport.EF;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
+using System.IO;
 
 namespace MyAirportApi
 {
@@ -29,11 +32,56 @@ namespace MyAirportApi
         {
             services.AddDbContext<MyAirportContext>(option => option.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=MyAirport;Integrated Security=True;"));
             services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "MyAirport API", 
+                    Version = "v1" ,
+                    Description = "Gestionnaire d'aéroport",
+                    TermsOfService = new Uri("https://examples.com/terms"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Celine BENIDDIR",
+                        Email = string.Empty,
+                        Url = new Uri("https://twitter.com/spboyer"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Use under LICX",
+                        Url = new Uri("https://examples.com/license"),
+                    }
+                });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+                var referencedAssemblies = Assembly.GetAssembly(typeof(Startup)).GetReferencedAssemblies();
+                referencedAssemblies.ToList().ForEach(assembly =>
+                {
+                    var path = Path.Combine(AppContext.BaseDirectory, $"{assembly.Name}.xml");
+                    if (File.Exists(path))
+                    {
+                        c.IncludeXmlComments(path);
+                    }
+                });
+
+            });
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My AirportAPI V1");
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

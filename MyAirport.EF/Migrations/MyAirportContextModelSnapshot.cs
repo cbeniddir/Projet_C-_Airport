@@ -27,18 +27,22 @@ namespace MyAirport.EF.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Classe")
+                        .IsRequired()
                         .HasColumnType("char(12)");
 
                     b.Property<string>("CodeIata")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateCreation")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Destination")
+                        .IsRequired()
                         .HasColumnType("char(12)");
 
                     b.Property<string>("Escale")
+                        .IsRequired()
                         .HasColumnType("char(12)");
 
                     b.Property<string>("Prioritaire")
@@ -46,9 +50,11 @@ namespace MyAirport.EF.Migrations
                         .HasColumnType("char(12)");
 
                     b.Property<string>("SSUR")
+                        .IsRequired()
                         .HasColumnType("char(12)");
 
                     b.Property<string>("Sta")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("VolId")
@@ -69,6 +75,7 @@ namespace MyAirport.EF.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Cie")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Destination")
@@ -81,6 +88,7 @@ namespace MyAirport.EF.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Lig")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<short?>("NbPassagers")

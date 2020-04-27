@@ -27,7 +27,14 @@ namespace MyAirportApi.Controllers
             return await _context.Vols.ToListAsync();
         }
 
-        // GET: api/Vols/5
+        /// <summary>
+        /// GET: api/Vols/5?bool bagages
+        /// L'option bagages permet d'indiquer si l'on veut voir la liste des bagages du vol ou non
+        /// si false bagage = null
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="bagage">Indique si l'on veut que la liste des bagages soit incluse dans le résultat</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Vol>> GetVol(int id, [FromQuery] bool bagage = false)
         {

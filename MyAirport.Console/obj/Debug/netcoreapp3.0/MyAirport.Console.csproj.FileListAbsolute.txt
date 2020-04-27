@@ -118,6 +118,7 @@ C:\Projects\Projet_C-_Airport\MyAirport.Console\bin\Debug\netcoreapp3.0\runtimes
 C:\Projects\Projet_C-_Airport\MyAirport.Console\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Projects\Projet_C-_Airport\MyAirport.Console\bin\Debug\netcoreapp3.0\MyAirport.EF.dll
 C:\Projects\Projet_C-_Airport\MyAirport.Console\bin\Debug\netcoreapp3.0\MyAirport.EF.pdb
+C:\Projects\Projet_C-_Airport\MyAirport.Console\bin\Debug\netcoreapp3.0\MyAirport.EF.xml
 C:\Projects\Projet_C-_Airport\MyAirport.Console\obj\Debug\netcoreapp3.0\MyAirport.Console.csprojAssemblyReference.cache
 C:\Projects\Projet_C-_Airport\MyAirport.Console\obj\Debug\netcoreapp3.0\MyAirport.Console.AssemblyInfoInputs.cache
 C:\Projects\Projet_C-_Airport\MyAirport.Console\obj\Debug\netcoreapp3.0\MyAirport.Console.AssemblyInfo.cs

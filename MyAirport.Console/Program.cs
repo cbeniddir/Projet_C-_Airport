@@ -12,13 +12,14 @@ namespace MyAirport.ConsoleApp
     {
         static void Main(string[] args)
         {
-            //var logger = MyAirportContext.loggerFactory.CreateLogger<Program>();
-            
-            //TODO : Faire marcher la création de l'objet MyAirportContext() avec DbContextOptions
-            
-            //DbContextOptionsBuilder optionsBuilder = new DbContextOptionsBuilder<MyAirportContext>();
-           // var connectionString = ConfigurationManager.ConnectionStrings["MyAirportDatabase"].ConnectionString;
-            //optionsBuilder.UseSqlServer(connectionString);
+            var logger = MyAirportContext.loggerFactory.CreateLogger<Program>();
+
+            ////TODO: Faire marcher la création de l'objet MyAirportContext() avec DbContextOptions
+
+
+            //    DbContextOptionsBuilder optionsBuilder = new DbContextOptionsBuilder<MyAirportContext>();
+            //    var connectionString = ConfigurationManager.ConnectionStrings["MyAirportDatabase"].ConnectionString;
+            //    optionsBuilder.UseSqlServer(connectionString);
 
             System.Console.WriteLine("MyAirport project bonjour!!");
             //using (var db = new MyAirportContext(optionsBuilder.Options)
@@ -56,18 +57,21 @@ namespace MyAirport.ConsoleApp
                 {
                     Classe = "Y",
                     CodeIata = "012387364501",
-                    DateCreation = Convert.ToDateTime("14/01/2020 12:52"),
-                    Destination = "BEG"
+                    DateCreation = DateTime.Now,
+                    Destination = "BEG",
+                    Escale = "Paris",
+                    SSUR = "SSUR",
+                    Sta = "Sta",
+                    Prioritaire = 1
                 };
                 db.Add(b1);
 
                 db.SaveChanges();
                 Console.ReadLine();
-                
-                //logger.LogInformation("Example log message create");
 
-                // Read
-                
+                logger.LogInformation("Example log message create");
+
+                //Read
                 Console.WriteLine("Voici la liste des vols disponibles");
                 var vol = db.Vols
                     .OrderBy(v => v.Cie);
@@ -77,12 +81,12 @@ namespace MyAirport.ConsoleApp
                 }
                 Console.ReadLine();
 
-                // Update
+                //Update
                 Console.WriteLine($"Le bagage {b1.BagageId} est modifié pour être rattaché au ");
                 b1.VolId = v1.VolId;
                 db.SaveChanges();
                 Console.ReadLine();
-               
+
 
                 //Delete vol et bagages du vol
                 Console.WriteLine($"Suppression du vol {v1.VolId} => {v1.Cie}{v1.Lig}");
@@ -91,8 +95,9 @@ namespace MyAirport.ConsoleApp
                 Console.ReadLine();
             }
 
-         
+
 
         }
     }
+
 }

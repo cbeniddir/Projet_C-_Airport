@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyAirport.EF</name>
+    </assembly>
+    <members>
+        <member name="T:MyAirport.EF.Bagage">
+            <summary>
+            Classe Bagage, représente une instance de Bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.BagageId">
+            <summary>
+            Clé primaire de l'objet Bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.Vol">
+            <summary>
+            Objet vol permettant d'associer les classes Vol et Bagage
+            Propriété de navigation
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.VolId">
+            <summary>
+            Clé étrangère représentant l'id du vol associé au Bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.DateCreation">
+            <summary>
+            Date de création du Bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.CodeIata">
+            <summary>
+            CodeIata du Bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.Classe">
+            <summary>
+            Classe du Bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.Prioritaire">
+            <summary>
+            Priorité du bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.Sta">
+            <summary>
+            Sta du Bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.SSUR">
+            <summary>
+            SSUR du bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.Destination">
+            <summary>
+            Destination du bagage
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Bagage.Escale">
+            <summary>
+            Escale du bagage
+            </summary>
+        </member>
+        <member name="M:MyAirport.EF.Bagage.#ctor(System.String,System.DateTime)">
+            <summary>
+            Constructeur de l'instance bagage par codeIata et sa date de création
+            </summary>
+            <param name="codeIata"></param>
+            <param name="dateCreation"></param>
+        </member>
+        <member name="M:MyAirport.EF.Bagage.#ctor">
+            <summary>
+            Constructeur de l'objet Bagage
+            Donne la possibilité de construire un objet Bagage sans passer de paramètres
+            </summary>
+        </member>
+        <member name="T:MyAirport.EF.Vol">
+            <summary>
+            Classe Vol, représente une instance de Vol
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Vol.VolId">
+            <summary>
+            Clé primaire de ma classe Vol
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Vol.Cie">
+            <summary>
+            Compagnie du Vol
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Vol.Lig">
+            <summary>
+            Numéro de ligne du vol
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Vol.Dhc">
+            <summary>
+            Dernier horaire connu
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Vol.Parking">
+            <summary>
+            Parking affecté au vol
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Vol.Immatriculation">
+            <summary>
+            Numéro d'immatriculation de l'avion
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Vol.NbPassagers">
+            <summary>
+            Nombre de passagers du vol
+            </summary>
+        </member>
+        <member name="P:MyAirport.EF.Vol.Destination">
+            <summary>
+            Ville de destination finale du vol
+            </summary>
+        </member>
+        <member name="M:MyAirport.EF.Vol.#ctor">
+            <summary>
+            Constructeur d'une instance Vol
+            </summary>
+        </member>
+        <member name="M:MyAirport.EF.Vol.#ctor(System.String,System.String,System.DateTime)">
+            <summary>
+            Constructeur d'une instance Vol
+            </summary>
+            <param name="compagnie"></param>
+            <param name="ligne"></param>
+            <param name="dhc"></param>
+        </member>
+    </members>
+</doc>
