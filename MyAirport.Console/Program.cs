@@ -14,15 +14,7 @@ namespace MyAirport.ConsoleApp
         {
             var logger = MyAirportContext.loggerFactory.CreateLogger<Program>();
 
-            ////TODO: Faire marcher la création de l'objet MyAirportContext() avec DbContextOptions
-
-
-            //    DbContextOptionsBuilder optionsBuilder = new DbContextOptionsBuilder<MyAirportContext>();
-            //    var connectionString = ConfigurationManager.ConnectionStrings["MyAirportDatabase"].ConnectionString;
-            //    optionsBuilder.UseSqlServer(connectionString);
-
             System.Console.WriteLine("MyAirport project bonjour!!");
-            //using (var db = new MyAirportContext(optionsBuilder.Options)
             using (var db = new MyAirportContext())
             {
                 // Create
